@@ -10,7 +10,7 @@ export default function FAQSection() {
   const toggle = (id: string) => setOpenId((current) => (current === id ? null : id))
 
   return (
-    <section id="faq" className="py-20 bg-white">
+    <section id="faq" className="py-12 md:py-20 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Frequently Asked Questions"

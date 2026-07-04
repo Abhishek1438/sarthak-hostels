@@ -44,10 +44,10 @@ export default function FeatureCard({ label, icon, description }: FeatureCardPro
       }}
     >
       <div className="mb-3 p-3 rounded-lg bg-[#EFF6FF]">
-        <Icon size={22} className="text-[#2563EB]" />
+        <Icon size={20} className="text-[#2563EB]" />
       </div>
-      <span className="text-sm font-semibold text-[#111827] leading-snug">{label}</span>
-      {description && <p className="mt-1 text-xs text-[#6B7280] leading-relaxed">{description}</p>}
+      <span className="text-xs sm:text-sm font-semibold text-[#111827] leading-snug">{label}</span>
+      {description && <p className="mt-1 text-xs text-[#6B7280] leading-relaxed hidden sm:block">{description}</p>}
     </div>
   )
 }

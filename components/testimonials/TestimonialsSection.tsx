@@ -11,13 +11,13 @@ export default function TestimonialsSection() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true })
 
   return (
-    <section id="testimonials" ref={ref} className="py-20 bg-[#F8FAFC]">
+    <section id="testimonials" ref={ref} className="py-12 md:py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="What Students Say"
           subtitle="Don't just take our word for it — hear directly from residents at Sarthak Boys Hostel."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {TESTIMONIALS.map((testimonial, i) => (
             <motion.div
               key={testimonial.id}

@@ -13,13 +13,13 @@ export default function RoomsSection() {
   const visibleRooms = ROOMS.filter((r) => r.imagePath !== null)
 
   return (
-    <section id="rooms" ref={ref} className="py-20 bg-white">
+    <section id="rooms" ref={ref} className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Our Rooms"
           subtitle="Choose the room type that fits your budget and lifestyle. All rooms come fully furnished."
         />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
           {visibleRooms.map((room, i) => (
             <motion.div
               key={room.id}

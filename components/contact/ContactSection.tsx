@@ -5,14 +5,14 @@ import SectionTitle from '@/components/common/SectionTitle'
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Contact Us"
           subtitle="Reach out to us for availability, pricing, or to schedule a visit."
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-start">
           {/* Contact Info */}
           <div className="flex flex-col gap-5">
             <h3 className="text-xl font-bold text-[#111827]">Get in Touch</h3>

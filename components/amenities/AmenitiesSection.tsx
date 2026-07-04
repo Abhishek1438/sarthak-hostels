@@ -11,13 +11,13 @@ export default function AmenitiesSection() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true })
 
   return (
-    <section id="amenities" ref={ref} className="py-20 bg-[#F8FAFC]">
+    <section id="amenities" ref={ref} className="py-12 md:py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Amenities"
           subtitle="Everything you need to study, rest, and thrive — all included in your stay."
         />
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           {AMENITIES.map((amenity, i) => (
             <motion.div
               key={amenity.id}

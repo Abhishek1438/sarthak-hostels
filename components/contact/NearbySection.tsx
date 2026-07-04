@@ -16,13 +16,13 @@ const proximityColors: Record<string, { bg: string; text: string }> = {
 
 export default function NearbySection() {
   return (
-    <section id="nearby" className="py-20 bg-white">
+    <section id="nearby" className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="What's Nearby"
           subtitle="Everything you need as a student is right around the corner from Sarthak Boys Hostel."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {NEARBY_PLACES.map((place) => {
             const Icon = iconMap[place.icon] || GraduationCap
             const prox = proximityColors[place.proximity] ?? { bg: '#F1F5F9', text: '#374151' }

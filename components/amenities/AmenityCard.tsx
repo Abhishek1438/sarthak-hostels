@@ -17,12 +17,12 @@ interface AmenityCardProps {
 export default function AmenityCard({ name, icon, description }: AmenityCardProps) {
   const Icon = iconMap[icon] || Wifi
   return (
-    <div className="flex flex-col items-center text-center p-5 rounded-xl bg-white border border-gray-100 shadow-sm">
-      <div className="mb-3 p-3 rounded-full bg-[#EFF6FF]">
-        <Icon size={22} className="text-[#2563EB]" />
+    <div className="flex flex-col items-center text-center p-3 sm:p-5 rounded-xl bg-white border border-gray-100 shadow-sm">
+      <div className="mb-2 sm:mb-3 p-2.5 sm:p-3 rounded-full bg-[#EFF6FF]">
+        <Icon size={20} className="text-[#2563EB]" />
       </div>
-      <span className="text-sm font-semibold text-[#111827]">{name}</span>
-      {description && <p className="mt-1 text-xs text-[#6B7280] leading-relaxed">{description}</p>}
+      <span className="text-xs sm:text-sm font-semibold text-[#111827]">{name}</span>
+      {description && <p className="mt-1 text-xs text-[#6B7280] leading-relaxed hidden sm:block">{description}</p>}
     </div>
   )
 }

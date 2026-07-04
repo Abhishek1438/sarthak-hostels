@@ -1,5 +1,5 @@
 export const SITE_NAME = "Sarthak Boys Hostel"
-export const PHONE = "+91 98765 43210"
+export const PHONE = "+91 94607 07295"
 export const EMAIL = "info@sarthakboyshostel.com"
 export const ADDRESS = "Near Manipal University Jaipur, Jaipur, Rajasthan 303007"
 export const MAPS_EMBED_URL =

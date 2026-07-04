@@ -11,13 +11,13 @@ export default function FeaturesSection() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true })
 
   return (
-    <section id="features" ref={ref} className="py-20 bg-[#F8FAFC]">
+    <section id="features" ref={ref} className="py-12 md:py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Why Choose Us"
           subtitle="Everything you need for a comfortable and productive student life — all under one roof."
         />
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           {FEATURES.map((feature, i) => (
             <motion.div
               key={feature.id}

@@ -23,20 +23,21 @@ export default function GalleryGrid() {
       : GALLERY_IMAGES.filter((img) => img.category === activeCategory)
 
   return (
-    <section id="gallery" className="py-20 bg-white">
+    <section id="gallery" className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Photo Gallery"
           subtitle="Take a look around — every corner of Sarthak Boys Hostel is designed with students in mind."
         />
 
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
+        {/* Filter Tabs — scrollable on mobile */}
+        <div className="flex flex-nowrap overflow-x-auto gap-2 mb-8 pb-1 sm:flex-wrap sm:justify-center"
+          style={{ scrollbarWidth: 'none' }}>
           {CATEGORIES.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className="px-4 py-2 rounded-full text-sm font-medium transition-colors min-h-[36px]"
+              className="px-4 py-2 rounded-full text-sm font-medium transition-colors shrink-0 min-h-[36px]"
               style={{
                 backgroundColor: activeCategory === cat ? '#2563EB' : '#F1F5F9',
                 color: activeCategory === cat ? '#fff' : '#374151',
@@ -50,7 +51,7 @@ export default function GalleryGrid() {
         {/* Grid */}
         <div
           ref={ref}
-          className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3"
+          className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-3"
         >
           {filtered.map((img, i) => (
             <motion.button

@@ -56,29 +56,29 @@ const FOOD_TOPICS = [
 
 export default function FoodSection() {
   return (
-    <section id="food" className="py-20 bg-[#F8FAFC]">
+    <section id="food" className="py-12 md:py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Meals & Dining"
           subtitle="Home-style, hygienic, and freshly prepared — three meals a day, every day."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {FOOD_TOPICS.map((topic) => {
             const Icon = topic.icon
             return (
               <div
                 key={topic.id}
-                className="rounded-2xl p-6 flex flex-col gap-3"
+                className="rounded-2xl p-5 sm:p-6 flex flex-col gap-3"
                 style={{ backgroundColor: topic.color }}
               >
                 <div
-                  className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
+                  className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center shrink-0"
                   style={{ backgroundColor: 'rgba(255,255,255,0.7)' }}
                 >
-                  <Icon size={22} style={{ color: topic.iconColor }} />
+                  <Icon size={20} style={{ color: topic.iconColor }} />
                 </div>
-                <h3 className="text-base font-bold text-[#111827]">{topic.title}</h3>
-                <p className="text-sm text-[#6B7280] leading-relaxed">{topic.description}</p>
+                <h3 className="text-sm sm:text-base font-bold text-[#111827]">{topic.title}</h3>
+                <p className="text-xs sm:text-sm text-[#6B7280] leading-relaxed">{topic.description}</p>
               </div>
             )
           })}

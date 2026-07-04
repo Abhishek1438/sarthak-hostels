@@ -135,9 +135,14 @@
   body {
     @apply bg-background text-foreground;
     color: #111827;
+    overflow-x: hidden;
   }
   html {
     @apply font-sans;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  img, video {
+    max-width: 100%;
   }
 }

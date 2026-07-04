@@ -43,13 +43,13 @@ export default function HostelLifeSection() {
   const { ref, inView } = useInView({ threshold: 0.05, triggerOnce: true })
 
   return (
-    <section id="hostel-life" ref={ref} className="py-20 bg-white">
+    <section id="hostel-life" ref={ref} className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Life at Sarthak"
           subtitle="More than just accommodation — a community where students grow together."
         />
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-8 md:gap-16">
           {GROUPS.map((group, gi) => (
             <motion.div
               key={group.label}
@@ -59,10 +59,10 @@ export default function HostelLifeSection() {
               className="rounded-2xl overflow-hidden"
               style={{ backgroundColor: group.bgColor }}
             >
-              <div className="p-6 md:p-8">
-                <h3 className="text-xl font-bold text-[#111827] mb-3">{group.label}</h3>
-                <p className="text-[#6B7280] leading-relaxed mb-6 max-w-3xl">{group.description}</p>
-                <div className="grid grid-cols-2 gap-3">
+              <div className="p-5 sm:p-6 md:p-8">
+                <h3 className="text-lg sm:text-xl font-bold text-[#111827] mb-2 sm:mb-3">{group.label}</h3>
+                <p className="text-sm sm:text-base text-[#6B7280] leading-relaxed mb-4 sm:mb-6 max-w-3xl">{group.description}</p>
+                <div className="grid grid-cols-2 gap-2 sm:gap-3">
                   {group.images.map((img) => (
                     <div
                       key={img.src}

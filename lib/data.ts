@@ -3,9 +3,9 @@ export const PHONE = "+91 94607 07295"
 export const EMAIL = "info@sarthakboyshostel.com"
 export const ADDRESS = "Near Manipal University Jaipur, Jaipur, Rajasthan 303007"
 export const MAPS_EMBED_URL =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58.73!2d75.5701501!3d26.836671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4959cdfa7fdd%3A0x42b77dcccd7772e!2sSarthak%20Boys%20Hostel%20%7C%20best%20pg%20near%20manipal%20university%20jaipur!5e0!3m2!1sen!2sin!4v1704000000000!5m2!1sen!2sin"
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58.73!2d75.5701501!3d26.836671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4959cdfa7fdd%3A0x42b77dcccd7772e!2sSarathi%20Boys%20Hostel%20%7C%20best%20pg%20near%20manipal%20university%20jaipur!5e0!3m2!1sen!2sin!4v1704000000000!5m2!1sen!2sin"
 export const MAPS_DIRECTIONS_URL =
-  "https://www.google.com/maps/dir//Sarthak+Boys+Hostel+near+Manipal+University+Jaipur/@26.836671,75.5701501,21z"
+  "https://www.google.com/maps/place/Sarathi+Boys+Hostel+%7C+best+pg+near+manipal+university+jaipur/@26.836671,75.5701501,21z/data=!4m6!3m5!1s0x396c4959cdfa7fdd:0x42b77dcccd7772e!8m2!3d26.8367402!4d75.570199!16s%2Fg%2F11v3nngt18?entry=ttu"
 
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
